@@ -8,6 +8,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     
+    <style>
+      .nav-link:hover {
+        color: #5e068a;
+      }
+
+      .active {
+        color: #5e068a !important;
+      }
+      @media (orientation: portrait) {
+        h1.h1size {
+          font-size: small;
+        }
+
+        p.psize {
+          font-size: xx-small;
+        }
+
+        button.btnsize {
+          font-size: xx-small;
+        }
+      }
+
+      .card-ani:hover {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        transform: scale(1.01);
+      }
+    </style>
 </head>
 <body>
     <div class="row text-white" style="font-family: sans-serif; font-size: small; background-color:rgb(83, 6, 137);">
@@ -85,6 +112,47 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  <div class="container mt-2">
+    <button type="button" class="btn btn-primary rounded-3 w-100" data-bs-toggle="modal"data-bs-target="#exampleModal" style="background-color: #5e068a0a; border:none" >
+      DEMO
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h4>Get Training Quote For Free</h4>
+          <form action="">
+            <input type="text" placeholder="NAME" class="form-control" style="border: none"> <hr>
+            <input type="email" placeholder="e-mail" class="form-control" style="border: none"> <hr>
+            <input type="tel" placeholder="Phone" class="form-control" style="border: none"> <hr>
+          <select name="current-status" required="" class="form-select rounded-3 mb-3" id="">
+          <option selected="true" disabled="disabled">Select Course Intersted In</option>
+         <option>Data Science -ML-BIG DATA With Cloud & AMP,</option>
+         <option>PYTHON DIJANGO-ANGULAR -FULL STACK WEB DEVELOPMENT EXPERT</option>
+         <option >MEARN STACK WEB DEVELOPMENT EXPERT-AUNGULAR &AMP,</option>
+         <option >BUSINESS ANALYSTIC-POWER BI &AMP</option>
+         <option >ANDROID DEVELOPER</option>
+         <option >PYTHON-DATA SCIENCE With ML</option>
+        </select>
+        <input type="text" placeholder="city" class="form-control" style="border: none"> <hr>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="comment" class="form-control mb-3" style="border: none"></textarea>
+         <button type="submit" class=" btn btn-primary rounded-3">SUBMIT</button>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+
+
+
+  </div>
 <main>
    
   <div class="container ">
@@ -120,6 +188,7 @@
         </div>
         <div class="col-lg-6 col-sm-12">
           <div class="p-3">
+    
             <h4 class="text-uppercase h4" style="color: #5e068a;">  Data Science - ML - AI - Big Data with Cloud &amp; Tableau </h4>
             <p> Python, Hadoop, Spark, Data Analytics, Linear Algebra,
               Statistics, Probability Concepts, Machine Learning, Deep
@@ -180,7 +249,7 @@
       </div>
     </div>
   </div>
- 
+
  </main>
 </body>
 </html>
